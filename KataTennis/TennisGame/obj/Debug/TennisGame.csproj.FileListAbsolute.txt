@@ -1,0 +1,6 @@
+C:\Users\azoua\Documents\GitHub\KataTennis\KataTennis\TennisGame\bin\Debug\TennisGame.dll
+C:\Users\azoua\Documents\GitHub\KataTennis\KataTennis\TennisGame\bin\Debug\TennisGame.pdb
+C:\Users\azoua\Documents\GitHub\KataTennis\KataTennis\TennisGame\obj\Debug\TennisGame.csprojAssemblyReference.cache
+C:\Users\azoua\Documents\GitHub\KataTennis\KataTennis\TennisGame\obj\Debug\TennisGame.csproj.CoreCompileInputs.cache
+C:\Users\azoua\Documents\GitHub\KataTennis\KataTennis\TennisGame\obj\Debug\TennisGame.dll
+C:\Users\azoua\Documents\GitHub\KataTennis\KataTennis\TennisGame\obj\Debug\TennisGame.pdb

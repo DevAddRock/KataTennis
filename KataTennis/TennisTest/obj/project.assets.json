@@ -1645,6 +1645,15 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "TennisGame/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/TennisGame.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TennisGame.dll": {}
+        }
       }
     }
   },
@@ -5743,6 +5752,11 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "TennisGame/1.0.0": {
+      "type": "project",
+      "path": "../TennisGame/TennisGame.csproj",
+      "msbuildProject": "../TennisGame/TennisGame.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5750,6 +5764,7 @@
       "Microsoft.NET.Test.Sdk >= 15.8.0",
       "Microsoft.NETCore.App >= 2.1.0",
       "NUnit3TestAdapter >= 3.10.0",
+      "TennisGame >= 1.0.0",
       "nunit >= 3.10.1"
     ]
   },
@@ -5782,7 +5797,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\azoua\\Documents\\GitHub\\KataTennis\\KataTennis\\TennisGame\\TennisGame.csproj": {
+              "projectPath": "C:\\Users\\azoua\\Documents\\GitHub\\KataTennis\\KataTennis\\TennisGame\\TennisGame.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
