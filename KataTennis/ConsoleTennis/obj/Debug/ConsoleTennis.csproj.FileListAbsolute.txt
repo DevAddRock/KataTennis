@@ -1,0 +1,10 @@
+C:\Users\azoua\Documents\GitHub\KataTennis\KataTennis\ConsoleTennis\bin\Debug\ConsoleTennis.exe.config
+C:\Users\azoua\Documents\GitHub\KataTennis\KataTennis\ConsoleTennis\bin\Debug\ConsoleTennis.exe
+C:\Users\azoua\Documents\GitHub\KataTennis\KataTennis\ConsoleTennis\bin\Debug\ConsoleTennis.pdb
+C:\Users\azoua\Documents\GitHub\KataTennis\KataTennis\ConsoleTennis\bin\Debug\TennisGame.dll
+C:\Users\azoua\Documents\GitHub\KataTennis\KataTennis\ConsoleTennis\bin\Debug\TennisGame.pdb
+C:\Users\azoua\Documents\GitHub\KataTennis\KataTennis\ConsoleTennis\obj\Debug\ConsoleTennis.csprojAssemblyReference.cache
+C:\Users\azoua\Documents\GitHub\KataTennis\KataTennis\ConsoleTennis\obj\Debug\ConsoleTennis.csproj.CoreCompileInputs.cache
+C:\Users\azoua\Documents\GitHub\KataTennis\KataTennis\ConsoleTennis\obj\Debug\ConsoleTennis.csproj.CopyComplete
+C:\Users\azoua\Documents\GitHub\KataTennis\KataTennis\ConsoleTennis\obj\Debug\ConsoleTennis.exe
+C:\Users\azoua\Documents\GitHub\KataTennis\KataTennis\ConsoleTennis\obj\Debug\ConsoleTennis.pdb

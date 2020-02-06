@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TennisTest", "TennisTest\Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisGame", "TennisGame\TennisGame.csproj", "{BA4C1DAC-7B6A-45C3-A06F-0E52FD340892}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTennis", "ConsoleTennis\ConsoleTennis.csproj", "{67B156E5-A8C7-4987-9623-0960D1559CAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BA4C1DAC-7B6A-45C3-A06F-0E52FD340892}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA4C1DAC-7B6A-45C3-A06F-0E52FD340892}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA4C1DAC-7B6A-45C3-A06F-0E52FD340892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67B156E5-A8C7-4987-9623-0960D1559CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67B156E5-A8C7-4987-9623-0960D1559CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67B156E5-A8C7-4987-9623-0960D1559CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67B156E5-A8C7-4987-9623-0960D1559CAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
