@@ -9,6 +9,7 @@ namespace Tests
     {
         private PointTennis pointTennis;
         private SetTennis setTennis;
+        private Tie_BreakTennis tie_BreakTennis;
 
         private List<List<Object>> TablePointScores()
         {
@@ -63,6 +64,30 @@ namespace Tests
                 };
         }
 
+        private List<List<Object>> TableTieBreakScore()
+        {
+            return new List<List<Object>>()
+                {
+                    new List<Object>() {1, 0,"1 - 0" },
+                    new List<Object>() {1, 1,"1 - 1" },
+                    new List<Object>() {2, 1,"2 - 1" },
+                    new List<Object>() {3, 2,"3 - 2" },
+                    new List<Object>() {4, 2,"4 - 2" },
+                    new List<Object>() {5, 2,"5 - 2" },
+                    new List<Object>() {6, 2,"6 - 2" },
+                    new List<Object>() {7, 2,"Player1 win the match" },
+
+                    new List<Object>() {7, 6,"7 - 6" },
+                    new List<Object>() {7, 7,"7 - 7" },
+
+                    new List<Object>() {10, 10,"10 - 10" },
+
+                    new List<Object>() {14, 12,"Player1 win the match" },
+                    new List<Object>() {12, 14,"Player2 win the match" },
+
+                };
+        }
+
         /// <summary>
         /// Test the methods of class PointTennis
         /// </summary>
@@ -95,6 +120,23 @@ namespace Tests
                 AddScores((int)row[0], (int)row[1], setTennis);
 
                 Assert.AreEqual(row[2], setTennis.MatchScore());
+            }
+        }
+
+        /// <summary>
+        /// Test the methods of class Tie_BreakTennis
+        /// </summary>
+        [Test]
+        public void TestTie_BreakTennis()
+        {
+            var table = TableTieBreakScore();
+
+            foreach (var row in table)
+            {
+                tie_BreakTennis = new Tie_BreakTennis();
+                AddScores((int)row[0], (int)row[1], tie_BreakTennis);
+
+                Assert.AreEqual(row[2], tie_BreakTennis.MatchScore());
             }
         }
 
