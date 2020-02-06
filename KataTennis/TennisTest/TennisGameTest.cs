@@ -75,7 +75,7 @@ namespace Tests
             {
                 pointTennis = new PointTennis();
 
-                AddScores((int)row[0], (int)row[1]);
+                AddScores((int)row[0], (int)row[1], pointTennis);
 
                 Assert.AreEqual(row[2], pointTennis.MatcheScores());
             }
@@ -98,27 +98,15 @@ namespace Tests
             }
         }
 
-        public void AddScores(int player1Score, int player2Score)
+        public void AddScores(int player1Score, int player2Score, TennisBase tennisBase)
         {
             for (int i = 0; i < player1Score; i++)
             {
-                setTennis.SetSocreToPlayer1();
+                tennisBase.SetSocreToPlayer1();
             }
             for (int i = 0; i < player2Score; i++)
             {
-                setTennis.SetSocreToPlayer2();
-            }
-        }
-
-        public void AddSetScores(int player1Score, int player2Score)
-        {
-            for (int i = 0; i < player1Score; i++)
-            {
-                setTennis.SetSocreToPlayer1();
-            }
-            for (int i = 0; i < player2Score; i++)
-            {
-                setTennis.SetSocreToPlayer2();
+                tennisBase.SetSocreToPlayer2();
             }
         }
 
