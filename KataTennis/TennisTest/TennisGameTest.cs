@@ -8,6 +8,7 @@ namespace Tests
     public class Tests
     {
         private PointTennis pointTennis;
+        private SetTennis setTennis;
 
         private List<List<Object>> TablePointScores()
         {
@@ -38,6 +39,30 @@ namespace Tests
                 };
         }
 
+        private List<List<Object>> TableSetScores()
+        {
+            return new List<List<Object>>()
+                {
+                    new List<Object>() {0 , 0, "0 - 0" },
+                    new List<Object>() {1 , 0, "1 - 0" },
+                    new List<Object>() {1 , 1, "1 - 1" },
+                    new List<Object>() {1 , 2, "1 - 2" },
+                    new List<Object>() {2 , 3, "2 - 3" },
+                    new List<Object>() {2 , 4, "2 - 4" },
+                    new List<Object>() {2 , 5, "2 - 5" },
+                    new List<Object>() {2 , 6, "Player2 win the match" },
+
+                    new List<Object>() {6 , 1, "Player1 win the match" },
+
+                    new List<Object>() {5 , 7, "Player2 win the match" },
+
+                    new List<object>() { 7, 5, "Player1 win the match" },
+
+                    new List<Object>() {6 , 6, "Tie Break score" },
+
+                };
+        }
+
         /// <summary>
         /// Test the methods of class PointTennis
         /// </summary>
@@ -56,15 +81,44 @@ namespace Tests
             }
         }
 
+        /// <summary>
+        /// Test the methods of class SetTennis
+        /// </summary>
+        [Test]
+        public void TestSetTennis()
+        {
+            var table = TableSetScores();
+
+            foreach (var row in table)
+            {
+                setTennis = new SetTennis();
+                AddScores((int)row[0], (int)row[1], setTennis);
+
+                Assert.AreEqual(row[2], setTennis.MatchScore());
+            }
+        }
+
         public void AddScores(int player1Score, int player2Score)
         {
             for (int i = 0; i < player1Score; i++)
             {
-                pointTennis.SetSocreToPlayer1();
+                setTennis.SetSocreToPlayer1();
             }
             for (int i = 0; i < player2Score; i++)
             {
-                pointTennis.SetSocreToPlayer2();
+                setTennis.SetSocreToPlayer2();
+            }
+        }
+
+        public void AddSetScores(int player1Score, int player2Score)
+        {
+            for (int i = 0; i < player1Score; i++)
+            {
+                setTennis.SetSocreToPlayer1();
+            }
+            for (int i = 0; i < player2Score; i++)
+            {
+                setTennis.SetSocreToPlayer2();
             }
         }
 
