@@ -1,14 +1,9 @@
-﻿    using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace TennisGame
 {
-    public class PointTennis
+    public class PointTennis : TennisBase
     {
-        public int ScorePlayer1 = 0, ScorePlayer2 = 0;
         private const int score_40 = 3;
         /// <summary>
         /// Get the result of socre
@@ -32,19 +27,10 @@ namespace TennisGame
         /// Return true if we have a winner
         /// </summary>
         /// <returns></returns>
-        public bool IsWin()
+        public override bool IsWin()
         {
             return (ScorePlayer1 >= ScorePlayer2 + 2 && ScorePlayer1 > 3)
                 || (ScorePlayer2 >= ScorePlayer1 + 2 && ScorePlayer2 > 3);
-        }
-
-        /// <summary>
-        /// Get the player that got more points
-        /// </summary>
-        /// <returns></returns>
-        public string GetPlayer()
-        {
-            return ScorePlayer1 > ScorePlayer2 ? "Player1" : "Player2";
         }
 
         /// <summary>
@@ -64,23 +50,6 @@ namespace TennisGame
         private bool IsDeuce()
         {
             return ScorePlayer1 == ScorePlayer2 && ScorePlayer1 > 2;
-        }
-
-        /// <summary>
-        /// Score increment for player 1
-        /// </summary>
-        /// <returns></returns>
-        public int SetSocreToPlayer1()
-        {
-            return ++ScorePlayer1;
-        }
-        /// <summary>
-        /// Score increment for player 1
-        /// </summary>
-        /// <returns></returns>
-        public int SetSocreToPlayer2()
-        {
-            return ++ScorePlayer2;
         }
 
         /// <summary>
